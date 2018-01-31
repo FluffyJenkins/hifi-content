@@ -57,7 +57,6 @@
                         debugPrint("Ping! " + JSON.stringify(entProps.velocity));
                         var reflect = Vec3.reflect(pickRay.direction, intersection.surfaceNormal);
                         vel = Vec3.multiply(-1.1, Vec3.multiplyVbyV(reflect, entProps.velocity));
-                        Vec3.debugPrint("reflect", reflect);
                         debugPrint("Ping2! " + JSON.stringify(vel));
 
                         Entities.editEntity(_entityID, {velocity: vel});
@@ -104,7 +103,6 @@
                         debugPrint("Ping! " + JSON.stringify(entProps.velocity));
                         var reflect = Vec3.reflect(pickRay.direction, intersection.surfaceNormal);
                         vel = Vec3.multiply(1.1, Vec3.multiplyVbyV(reflect, entProps.velocity));
-                        Vec3.debugPrint("reflect", reflect);
                         debugPrint("Ping2! " + JSON.stringify(vel));
 
                         Entities.editEntity(_entityID, {velocity: vel});
@@ -128,7 +126,7 @@
 
     this.unload = function (entityID) {
         Script.clearInterval(SCRIPT_INTERVAL);
-    }
+    };
 
     this.preload = function (entityID) {
         this.entityID = entityID;
