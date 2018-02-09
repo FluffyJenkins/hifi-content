@@ -9,9 +9,9 @@ var appIconInactive = Script.resolvePath("iconWhite.svg");
 
 var _entityID;
 
-var MODEL_URL = Script.resolvePath("Ball.fbx");
+var MODEL_URL = Script.resolvePath("superBall.fbx");
 var GRAVITY = {x: 0, y: -7, z: 0};
-var BALL_SIZE = {x: 0.5, y: 0.5, z: 0.5};
+var BALL_SIZE = {x: 0.25, y: 0.25, z: 0.25};
 var DENSITY = 100;
 
 var SCRIPT_URL = Script.resolvePath("superBall_Entity.js?");
