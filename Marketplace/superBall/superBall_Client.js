@@ -34,7 +34,7 @@ function activateFunction() {
         shapeType: "simple-hull",
         restitution: 1,
         gravity: {x: 0, y: 0, z: 0}
-    });
+    },!(Entities.canRez() || Entities.canRezTmp()));
 }
 
 function deactivateFunction() {
